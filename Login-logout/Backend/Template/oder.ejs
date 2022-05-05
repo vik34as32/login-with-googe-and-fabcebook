@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/style.css"> 
+    <link rel="stylesheet" href="/assets/style3.css">
+    <title>Oders</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %>
+    <div class="container">
+              <div class="row">
+              <div class="col-md-12">
+              <div class="ground">
+                  <!---------------------row1---------------->
+              <div class="row">
+              <div class="col-sm-12 col-md-6">
+              <div class="dataTables_length" id="sampleTable_length">
+              <label id="label-one">Show 
+              <select name="sampleTable_length" aria-controls="sampleTable" class="form-control form-control-sm">
+              <option value="10">10</option>
+              <option value="25">25</option>
+              <option value="50">50</option>
+                <option value="100">100</option>
+                </select>
+                entries 
+                </label>
+                </div></div>
+                <div class="col-sm-12 col-md-6">
+                <div id="sampleTable_filter" class="dataTables_filter">
+                <label id="label-two">
+                Search:
+                <input type="search" class="form-control form-control-sm" ></label>
+                </div></div></div>
+
+                 <!---------------------row2---------------->
+                <div class="row">
+                <div class="col-sm-12">
+                <table id="sampleTable" class="table table-hover table-bordered dataTable" >
+                <div class="row">
+                <div class="col-sm-12 col-md-6">
+                <div class="dataTables_length" id="sampleTable_length">
+                </div></div>
+                                                
+                <thead>
+                <tr role="row">
+                <th class="ticket-number sorting_asc" >#Order Ref</th>
+                <th class="title sorting">Name</th>
+                <th class="status sorting" >Mobile</th>
+                <th class="sorting">Quantity</th>
+                <th class="sorting">status</th>
+                 <th class="sorting" >Action</th></tr>
+                </thead>
+
+                <tbody>
+                <tr class=""><td valign="top" colspan="6" class="dataTables_empty">No data available in table</td></tr>
+                </tbody>
+
+                <tfoot>
+                <tr><th class="ticket-number" rowspan="1" colspan="1">#Order Ref</th>
+                    <th class="title" rowspan="1" colspan="1">Name</th>
+                    <th class="status" rowspan="1" colspan="1">Mobile</th>
+                    <th rowspan="1" colspan="1">Quantity</th>
+                    <th rowspan="1" colspan="1">status</th>
+                    <th rowspan="1" colspan="1">Action</th>
+                </tr>
+                </tfoot>
+                </table>
+
+
+                 <!---------------------row---------------->
+                <div class="row">
+                <div class="col-sm-12 col-md-5">
+                <div class="dataTables_info" id="sampleTable_info">Showing 0 to 0 of 0 entries</div></div>
+                <div class="col-sm-12 col-md-7">
+                <div class="dataTables_paginate paging_simple_numbers" id="sampleTable_paginate">
+                <ul class="pagination">
+                   <li class="paginate_button page-item previous disabled" id="sampleTable_previous">
+                      <a href="#"  class="page-link">Previous</a></li>
+
+                   <li class="paginate_button page-item next disabled" id="sampleTable_next">
+                      <a href="#" class="page-link">Next</a></li>
+                </ul>
+            </div></div></div>
+        </div></div></div>
+        <%- include('./partials/footer.ejs') %>
+</body>
+</html>

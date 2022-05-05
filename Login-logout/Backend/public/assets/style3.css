@@ -1,0 +1,38 @@
+.ground {
+    height:300px;
+    border-radius: 3px;
+    padding: 20px;
+     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 20%);
+    margin-bottom: 30px;
+  }
+  
+  .container {
+    padding-top: 100px;
+  }
+  #label-one {
+    padding: 15px;
+    display: inline-flex;
+    gap: 10px;
+  }
+  li#sampleTable_previous {
+    padding-left: 473px;
+  }
+  #label-two {
+    padding: 20px 200px;
+    display: inline-flex;
+    gap: 10px;
+  }
+  select.form-control.form-control-sm {
+    width: 80px;
+  }
+  
+  input.form-control.form-control-sm {
+    width: 267px;
+  }
+  td.dataTables_empty {
+    padding: 10px;
+    text-align: center;
+  }
+  .col-sm-12.col-md-5 {
+    padding-left: 15px;
+  }

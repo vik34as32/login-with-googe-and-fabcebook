@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/style.css">
+    <title>dhskc</title>
+</head>
+<body>
+        
+  <%- include('./partials/header.ejs') %>
+      <div class="sections">
+          <div class="first-section">
+           <img src="/assets/image/dress.png">
+      </div>
+          <div class="second-section">
+              <button class="button-two">Reorder</button>
+                  <h1>Please Insert Sizes</h1>
+                    
+                  <br>
+          <form action="/api", method="post">
+                        <h5>Choose your wear:</h5>
+                        <input type="radio" id="html" name="choose_dresses" value="Omani traditional 3 lines" >
+                        <label for="html">Omani traditional 3 lines</label><br>
+                        <input type="radio" id="css" name="choose_dresses"  value="Omani Kuwait ">
+                        <label for="css">Omani Kuwait </label><br>
+                        <br>
+                        <label for="neck">1.Neck (inch):</label><br>
+                        <input type="text" id="neck" name="Neck"  placeholder="Enter Neck (inch)" ><br><br>
+                        <label for="Shoulder">2.Shouder (inch)</label><br>
+                        <input type="text" id="neck" name="Shoulder" placeholder="Enter Shoulder (inch)"><br><br>
+                        <label for="chest">3.Chest (inch)</label><br>
+                        <input type="text" id="neck" name="Chest" placeholder="Enter Chest (inch)"><br><br>
+                        <label for="lname">4.Arm (inch)</label><br>
+                        <input type="text" id="neck" name="Arm" placeholder="Enter Arm (inch)"><br><br>
+                        <label for="lname">5.Wrist (inch)</label><br>
+                        <input type="text" id="neck" name="Wrist" placeholder="Enter Wrist (inch)"><br><br>
+                        <label for="lname">6.Length (inch)</label><br>
+                        <input type="text" id="neck" name="Length" placeholder="Enter Length (inch)"><br><br>
+                        <label for="lname">7.Width (inch)</label><br>
+                        <input type="text" id="neck" name="Width" placeholder="Enter Width (inch)"><br><br>
+                        <p id="note">Note: Fabric is Tuyubu white</p>
+                        <input id="submitQ" type="submit" placeholder="Submit Query">
+                     
+                        
+                      </form> 
+        </div>
+      </div>
+      <%- include('./partials/footer.ejs') %>
+</body>
+</html>
